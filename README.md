@@ -24,11 +24,10 @@ Browser: `bower install paperclip-component`
 You'll first need to add `paperclip-component` as a plugin:
 
 ```javascript
-
 var pc   = require("pc"),
 pcc      = require("paperclip-component"),
-bindable = require("bindable"),
-mojo     = require("mojojs");
+mojo     = require("mojojs"),
+bindable = require("bindable");
 
 //where global components live.
 var components = new bindable.Object();
@@ -36,3 +35,40 @@ var components = new bindable.Object();
 //plugin paperclip-components, and point to the components dictionary
 pc.use(pcc(components));
 ```
+
+After you have that setup, you can start registering components. Here's one specific to a `node.js` application:
+
+```javascript
+components.set("mainLayout", require("./mainLayout");
+```
+
+`mainLayout.js`:
+
+```javascript
+var mojo = require("mojojs"),
+structr  = require("structr"),
+pc       = require("pc")
+
+var MainLayoutView = structr(mojo.View, {
+  paper: pc.load(__dirname + "/mainLayout.pc")
+});
+
+module.exports = MainLayoutView;
+```
+
+`mainLayout.pc`
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    {{ html: sections.content }}
+  </body>
+</html>
+```
+
+
+
+
+
