@@ -1,0 +1,25 @@
+{
+  "name": "paperclip-view",
+  "version": "0.0.0",
+  "description": "paperclip-view ==============",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/classdojo/paperclip-view.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "15f04f9f9da324917f116da384b786ba0009c1cf",
+  "dependencies": {
+    "type-component": "0.0.1",
+    "bindable": "~0.4.0",
+    "paperclip": "~0.2.7"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  }
+}
