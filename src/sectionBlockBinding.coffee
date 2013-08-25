@@ -39,7 +39,7 @@ class SectionBlockBinding extends pc.BaseBlockBinding
   ###
 
   _onChange: (value) =>
-    console.log "DEN"
+  
     if @contentTemplate
       @_changeDefinition value
     else
