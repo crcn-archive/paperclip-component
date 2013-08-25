@@ -1,27 +1,38 @@
-### Usage
+Paperclip-components allows you to break up your paperclip views into separate files, and re-use them in other parts 
+of your application. This idea was derrived from [Ember Components](http://emberjs.com/api/classes/Ember.Component.html),
+and [Angular Directives](http://docs.angularjs.org/guide/directive).
 
-bootstrap:
+## Requirements
 
-```coffeescript
+- [bindable.js](https://github.com/classdojo/bindable.js) - needed for registering components
+- [NPM](http://nodejs.org), or [Bower](http://bower.io) - used to install `paperclip-compoennt`
+- [paperclip](https://github.com/classdojo/paperclip.js)
 
-pc         = require "paperclip"
-pcc        = require "paperclip-component"
-bindable   = require "bindable"
-mojo       = require "mojojs"
-LayoutView = require "./layoutView"
 
-components = new bindable.Object {
-  layout: new LayoutView()
-}
+## Recommended Libraries
 
+- [mojo.js](http://github.com/classdojo/mojo.js) - View controller - this serves as the "backbone" of your application.
+
+
+## Installation
+
+Node: `npm install paperclip-component`
+Browser: `bower install paperclip-component`
+
+## Usage
+
+You'll first need to add `paperclip-component` as a plugin:
+
+```javascript
+
+var pc   = require("pc"),
+pcc      = require("paperclip-component"),
+bindable = require("bindable"),
+mojo     = require("mojojs");
+
+//where global components live.
+var components = new bindable.Object();
+
+//plugin paperclip-components, and point to the components dictionary
 pc.use(pcc(components));
-
-```
-
-template usage:
-
-```html
-{{#layout: context }}
-  body
-{{/}}
 ```
