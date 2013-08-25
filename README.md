@@ -33,7 +33,7 @@ pc.use(pcc(components));
 After you have that setup, you can start registering components. Here's one specific to a `node.js` application:
 
 ```javascript
-components.set("mainLayout", require("./mainLayout");
+components.set("mainLayout", require("./mainLayout"));
 ```
 
 mainLayout.js:
