@@ -26,7 +26,6 @@ You'll first need to add `paperclip-component` as a plugin:
 ```javascript
 var pc   = require("paperclip"),
 pcc      = require("paperclip-component"),
-mojo     = require("mojojs"),
 bindable = require("bindable");
 
 //where global components live.
