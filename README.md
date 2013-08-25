@@ -42,7 +42,7 @@ After you have that setup, you can start registering components. Here's one spec
 components.set("mainLayout", require("./mainLayout");
 ```
 
-`mainLayout.js`:
+mainLayout.js:
 
 ```javascript
 var mojo = require("mojojs"),
@@ -56,17 +56,42 @@ var MainLayoutView = structr(mojo.View, {
 module.exports = MainLayoutView;
 ```
 
-`mainLayout.pc`
+mainLayout.pc:
 
 ```html
 <html>
   <head>
   </head>
   <body>
-    {{ html: sections.content }}
+    {{ html: sections.body }}
   </body>
 </html>
 ```
+
+After you've defined your component, you can use it in any template. Here's how you might use `mainLayout` in a `.pc` file:
+
+hello.pc:
+
+```html
+{{#mainLayout}}
+  {{#sections: "body" }}
+    Hello World!
+  {{/}}
+{{/}}
+```
+
+The rendered output of `hello.pc` would be:
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    Hello World!
+  </body>
+</html>
+```
+
 
 
 
