@@ -9,11 +9,6 @@ and [Angular Directives](http://docs.angularjs.org/guide/directive).
 - [paperclip](https://github.com/classdojo/paperclip.js)
 
 
-## Recommended Libraries
-
-- [mojo.js](http://github.com/classdojo/mojo.js) - View controller - this serves as the "backbone" of your application.
-
-
 ## Installation
 
 - Node: `npm install paperclip-component`
