@@ -16,8 +16,8 @@ and [Angular Directives](http://docs.angularjs.org/guide/directive).
 
 ## Installation
 
-Node: `npm install paperclip-component`
-Browser: `bower install paperclip-component`
+- Node: `npm install paperclip-component`
+- Browser: `bower install paperclip-component`
 
 ## Usage
 
