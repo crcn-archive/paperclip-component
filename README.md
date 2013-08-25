@@ -24,7 +24,7 @@ and [Angular Directives](http://docs.angularjs.org/guide/directive).
 You'll first need to add `paperclip-component` as a plugin:
 
 ```javascript
-var pc   = require("pc"),
+var pc   = require("paperclip"),
 pcc      = require("paperclip-component"),
 mojo     = require("mojojs"),
 bindable = require("bindable");
@@ -47,7 +47,7 @@ mainLayout.js:
 ```javascript
 var mojo = require("mojojs"),
 structr  = require("structr"),
-pc       = require("pc")
+pc       = require("paperclip")
 
 var MainLayoutView = structr(mojo.View, {
   paper: pc.load(__dirname + "/mainLayout.pc")
