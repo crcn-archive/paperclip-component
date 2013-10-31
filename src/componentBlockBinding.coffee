@@ -26,6 +26,15 @@ module.exports = (Component) ->
 
       @_settings.set "options", ops
 
+
+    ###
+    ###
+
+    unbind: () =>
+      super()
+      @child?.unbind()
+      @_component?.dispose()
+
     ###
     ###
 

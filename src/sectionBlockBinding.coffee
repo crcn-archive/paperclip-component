@@ -48,6 +48,13 @@ class SectionBlockBinding extends pc.BaseBlockBinding
   ###
   ###
 
+  unbind: () ->
+    super()
+    @_content?.unbind()
+
+  ###
+  ###
+
   _changeDefinition: (value) ->
 
     # reference to this block so that when referenced, the content
