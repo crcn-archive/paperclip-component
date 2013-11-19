@@ -40,6 +40,7 @@ module.exports = (Component) ->
 
     _createComponent: (@viewName) =>
       @_component = new Component()
+      @_component.set "parent", @context
       @_component.render()
       @section.append @_component.section.toFragment()
 
