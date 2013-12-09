@@ -1,6 +1,6 @@
 {
   "name": "paperclip-component",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "paperclip-view ==============",
   "main": "./lib/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "dependencies": {
     "type-component": "0.0.1",
     "bindable": "~0.4.0",
-    "paperclip": "~0.2.7"
+    "paperclip": "0.3.x"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3"
