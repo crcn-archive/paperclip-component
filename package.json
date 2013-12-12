@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["mojo-plugin", "paperclip"],
   "repository": {
     "type": "git",
     "url": "git://github.com/classdojo/paperclip-view.git"

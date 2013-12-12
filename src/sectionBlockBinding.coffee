@@ -27,7 +27,7 @@ class SectionBlockBinding extends pc.BaseBlockBinding
    called when needed, otherwise content is never created.
   ###
 
-  createFragment: () ->
+  render: () ->
 
     # create only once
     #unless @_content
