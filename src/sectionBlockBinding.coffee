@@ -32,8 +32,7 @@ class SectionBlockBinding extends pc.BaseBlockBinding
     # create only once
     #unless @_content
     @_content = @contentTemplate.bind(@context)
-
-    @_content.section.toFragment()
+    @_content.section
 
   ###
   ###
@@ -69,7 +68,7 @@ class SectionBlockBinding extends pc.BaseBlockBinding
     @section.removeAll()
 
     if value
-      @section.append value.createFragment()
+      @section.append value.render()
 
 
 module.exports = SectionBlockBinding
