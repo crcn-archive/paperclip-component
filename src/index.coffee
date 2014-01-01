@@ -9,7 +9,7 @@ registerComponents = (components, pc) ->
   register = (key, value) ->
     pc.blockBinding key, componentBlockBinding value
   
-  for name of (o = components.toObject())
+  for name of (o = components.toJSON())
     register name, o[name]
 
   components.on "change", register
