@@ -32,7 +32,7 @@ class SectionBlockBinding extends pc.BaseBlockBinding
     # create only once
     #unless @_content
     @_content = @contentTemplate.bind(@context)
-    @_content.section
+    @_content.section.render()
 
   ###
   ###
