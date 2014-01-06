@@ -1,6 +1,6 @@
 {
   "name": "paperclip-component",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "paperclip-view ==============",
   "main": "./lib/index.js",
   "scripts": {

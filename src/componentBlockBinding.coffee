@@ -41,8 +41,7 @@ module.exports = (Component) ->
     _createComponent: (@viewName) =>
       @_component = new Component()
       @_component.set "parent", @context
-      @_component.render()
-      @section.append @_component.section.toFragment()
+      @section.append @_component.render()
 
       if @contentTemplate
         @child = @contentTemplate.bind @_component
