@@ -37,6 +37,13 @@ class SectionBlockBinding extends pc.BaseBlockBinding
   ###
   ###
 
+  remove: () ->
+    @_content?.remove()
+
+
+  ###
+  ###
+
   _onChange: (value) =>
   
     if @contentTemplate
