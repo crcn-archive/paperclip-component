@@ -1,0 +1,143 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.21
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/craig/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+12 verbose folder .
+13 silly lockFile 1f1177db-tar tar://.
+14 verbose lock tar://. /Users/craig/.npm/1f1177db-tar.lock
+15 silly lockFile aa425cfc-8058-0-23165572108700871-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+16 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz /Users/craig/.npm/aa425cfc-8058-0-23165572108700871-tmp-tgz.lock
+17 silly lockFile 1f1177db-tar tar://.
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile aa425cfc-8058-0-23165572108700871-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+20 silly lockFile aa425cfc-8058-0-23165572108700871-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+21 verbose tar unpack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+22 silly lockFile a3711523-8058-0-23165572108700871-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+23 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package /Users/craig/.npm/a3711523-8058-0-23165572108700871-package.lock
+24 silly lockFile aa425cfc-8058-0-23165572108700871-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+25 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz /Users/craig/.npm/aa425cfc-8058-0-23165572108700871-tmp-tgz.lock
+26 silly gunzTarPerm modes [ '755', '644' ]
+27 silly gunzTarPerm extractEntry package.json
+28 silly gunzTarPerm extractEntry .npmignore
+29 silly gunzTarPerm extractEntry README.md
+30 silly gunzTarPerm extractEntry lib/componentBlockBinding.js
+31 silly gunzTarPerm extractEntry lib/index.js
+32 silly gunzTarPerm extractEntry lib/sectionBlockBinding.js
+33 silly gunzTarPerm extractEntry makefile
+34 silly gunzTarPerm extractEntry src/componentBlockBinding.coffee
+35 silly gunzTarPerm extractEntry src/index.coffee
+36 silly gunzTarPerm extractEntry src/sectionBlockBinding.coffee
+37 silly lockFile a3711523-8058-0-23165572108700871-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+38 silly lockFile a3711523-8058-0-23165572108700871-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+39 silly lockFile aa425cfc-8058-0-23165572108700871-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+40 silly lockFile aa425cfc-8058-0-23165572108700871-tmp-tgz tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/tmp.tgz
+41 verbose tar pack [ '/Users/craig/.npm/paperclip-component/0.2.3/package.tgz',
+41 verbose tar pack   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package' ]
+42 verbose tarball /Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+43 verbose folder /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+44 silly lockFile a3711523-8058-0-23165572108700871-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+45 verbose lock tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package /Users/craig/.npm/a3711523-8058-0-23165572108700871-package.lock
+46 silly lockFile 491bfb5c-clip-component-0-2-3-package-tgz tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+47 verbose lock tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz /Users/craig/.npm/491bfb5c-clip-component-0-2-3-package-tgz.lock
+48 silly lockFile a3711523-8058-0-23165572108700871-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+49 silly lockFile a3711523-8058-0-23165572108700871-package tar:///var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-2531-F1LmGjHD/1389234098058-0.23165572108700871/package
+50 silly lockFile 491bfb5c-clip-component-0-2-3-package-tgz tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+51 silly lockFile 491bfb5c-clip-component-0-2-3-package-tgz tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+52 silly lockFile f5ce8889-aperclip-component-0-2-3-package /Users/craig/.npm/paperclip-component/0.2.3/package
+53 verbose lock /Users/craig/.npm/paperclip-component/0.2.3/package /Users/craig/.npm/f5ce8889-aperclip-component-0-2-3-package.lock
+54 silly lockFile f5ce8889-aperclip-component-0-2-3-package /Users/craig/.npm/paperclip-component/0.2.3/package
+55 silly lockFile f5ce8889-aperclip-component-0-2-3-package /Users/craig/.npm/paperclip-component/0.2.3/package
+56 verbose tar unpack /Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+57 silly lockFile a910f219-aperclip-component-0-2-3-package tar:///Users/craig/.npm/paperclip-component/0.2.3/package
+58 verbose lock tar:///Users/craig/.npm/paperclip-component/0.2.3/package /Users/craig/.npm/a910f219-aperclip-component-0-2-3-package.lock
+59 silly lockFile 491bfb5c-clip-component-0-2-3-package-tgz tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+60 verbose lock tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz /Users/craig/.npm/491bfb5c-clip-component-0-2-3-package-tgz.lock
+61 silly gunzTarPerm modes [ '755', '644' ]
+62 silly gunzTarPerm extractEntry package.json
+63 silly gunzTarPerm extractEntry .npmignore
+64 silly gunzTarPerm extractEntry README.md
+65 silly gunzTarPerm extractEntry lib/componentBlockBinding.js
+66 silly gunzTarPerm extractEntry lib/index.js
+67 silly gunzTarPerm extractEntry lib/sectionBlockBinding.js
+68 silly gunzTarPerm extractEntry makefile
+69 silly gunzTarPerm extractEntry src/componentBlockBinding.coffee
+70 silly gunzTarPerm extractEntry src/index.coffee
+71 silly gunzTarPerm extractEntry src/sectionBlockBinding.coffee
+72 silly lockFile a910f219-aperclip-component-0-2-3-package tar:///Users/craig/.npm/paperclip-component/0.2.3/package
+73 silly lockFile a910f219-aperclip-component-0-2-3-package tar:///Users/craig/.npm/paperclip-component/0.2.3/package
+74 silly lockFile 491bfb5c-clip-component-0-2-3-package-tgz tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+75 silly lockFile 491bfb5c-clip-component-0-2-3-package-tgz tar:///Users/craig/.npm/paperclip-component/0.2.3/package.tgz
+76 verbose chmod /Users/craig/.npm/paperclip-component/0.2.3/package.tgz 644
+77 verbose chown /Users/craig/.npm/paperclip-component/0.2.3/package.tgz [ 501, 20 ]
+78 silly lockFile 3a52ce78- .
+79 silly lockFile 3a52ce78- .
+80 silly publish { name: 'paperclip-component',
+80 silly publish   version: '0.2.3',
+80 silly publish   description: 'paperclip-view ==============',
+80 silly publish   main: './lib/index.js',
+80 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+80 silly publish   keywords: [ 'mojo-plugin', 'paperclip' ],
+80 silly publish   repository:
+80 silly publish    { type: 'git',
+80 silly publish      url: 'git://github.com/classdojo/paperclip-view.git' },
+80 silly publish   author: '',
+80 silly publish   license: 'BSD',
+80 silly publish   readmeFilename: 'README.md',
+80 silly publish   gitHead: '15f04f9f9da324917f116da384b786ba0009c1cf',
+80 silly publish   dependencies:
+80 silly publish    { 'type-component': '0.0.1',
+80 silly publish      bindable: '~0.4.0',
+80 silly publish      paperclip: '0.3.x' },
+80 silly publish   devDependencies: { 'coffee-script': '~1.6.3' },
+80 silly publish   readme: 'Paperclip-components allows you to break up your paperclip views into separate files, and re-use them in other parts \nof your application. This idea was derrived from [Ember Components](http://emberjs.com/api/classes/Ember.Component.html),\nand [Angular Directives](http://docs.angularjs.org/guide/directive).\n\n## Requirements\n\n- [bindable.js](https://github.com/classdojo/bindable.js) - needed for registering components\n- [NPM](http://nodejs.org), or [Bower](http://bower.io) - used to install `paperclip-compoennt`\n- [paperclip](https://github.com/classdojo/paperclip.js)\n\n\n## Installation\n\n- Node: `npm install paperclip-component`\n- Browser: `bower install paperclip-component`\n\n## Usage\n\nYou\'ll first need to add `paperclip-component` as a plugin:\n\n```javascript\nvar pc   = require("paperclip"),\npcc      = require("paperclip-component"),\nbindable = require("bindable");\n\n//where global components live.\nvar components = new bindable.Object();\n\n//plugin paperclip-components, and point to the components dictionary\npc.use(pcc(components));\n```\n\nAfter you have that setup, you can start registering components. Here\'s one specific to a `node.js` application:\n\n```javascript\ncomponents.set("mainLayout", require("./mainLayout"));\n```\n\nmainLayout.js:\n\n```javascript\nvar mojo = require("mojojs"),\nstructr  = require("structr"),\npc       = require("paperclip")\n\nvar MainLayoutView = structr(mojo.View, {\n  paper: pc.load(__dirname + "/mainLayout.pc")\n});\n\nmodule.exports = MainLayoutView;\n```\n\nmainLayout.pc:\n\n```html\n<html>\n  <head>\n  </head>\n  <body>\n    {{ html: sections.body }}\n  </body>\n</html>\n```\n\nAfter you\'ve defined your component, you can use it in any template. Here\'s how you might use `mainLayout` in a `.pc` file:\n\nhello.pc:\n\n```html\n{{#mainLayout}}\n  {{#sections: "body" }}\n    Hello World!\n  {{/}}\n{{/}}\n```\n\nThe rendered output of `hello.pc` would be:\n\n```html\n<html>\n  <head>\n  </head>\n  <body>\n    Hello World!\n  </body>\n</html>\n```\n\n\n\n\n\n\n',
+80 silly publish   bugs: { url: 'https://github.com/classdojo/paperclip-view/issues' },
+80 silly publish   _id: 'paperclip-component@0.2.3',
+80 silly publish   dist: { shasum: '2b673887bf1f3fdece4b962e238480b4e173c118' },
+80 silly publish   _from: '.' }
+81 verbose url raw paperclip-component
+82 verbose url resolving [ 'http://registry.npmjs.org/', './paperclip-component' ]
+83 verbose url resolved http://registry.npmjs.org/paperclip-component
+84 info trying registry request attempt 1 at 18:21:38
+85 http PUT http://registry.npmjs.org/paperclip-component
+86 http 409 http://registry.npmjs.org/paperclip-component
+87 verbose url raw paperclip-component
+88 verbose url resolving [ 'http://registry.npmjs.org/', './paperclip-component' ]
+89 verbose url resolved http://registry.npmjs.org/paperclip-component
+90 info trying registry request attempt 1 at 18:21:38
+91 http GET http://registry.npmjs.org/paperclip-component
+92 http 200 http://registry.npmjs.org/paperclip-component
+93 error publish fail Cannot publish over existing version.
+93 error publish fail Update the 'version' field in package.json and try again.
+93 error publish fail
+93 error publish fail If the previous version was published in error, see:
+93 error publish fail     npm help unpublish
+93 error publish fail
+93 error publish fail To automatically increment version numbers, see:
+93 error publish fail     npm help version
+94 error System Darwin 13.0.0
+95 error command "node" "/usr/local/bin/npm" "publish"
+96 error cwd /Users/craig/Developer/Public/paperclip-view
+97 error node -v v0.10.21
+98 error npm -v 1.3.11
+99 error code EPUBLISHCONFLICT
+100 verbose exit [ 1, true ]
