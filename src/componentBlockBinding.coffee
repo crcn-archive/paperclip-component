@@ -2,6 +2,7 @@
 pc       = require "paperclip"
 type     = require "type-component"
 bindable = require "bindable"
+janitor  = require "janitorjs"
 
 module.exports = (Component) ->
 
@@ -12,6 +13,7 @@ module.exports = (Component) ->
 
     constructor: () ->
       super arguments...
+      @_janitor = janitor()
       @_settings = new bindable.Object()
       @_settings.bind "options", @_changeViewOptions
 
@@ -32,6 +34,7 @@ module.exports = (Component) ->
 
     unbind: () =>
       super()
+      @_janitor.dispose()
       @child?.unbind()
       @_component?.dispose()
 
@@ -50,8 +53,24 @@ module.exports = (Component) ->
     ###
 
     _changeViewOptions: (componentOptions) =>
+
+      @_janitor.dispose()
+
+
       for key of componentOptions
-        @_component.set key, componentOptions[key]
+        v = componentOptions[key]
+        if v and v.__isBindableReference
+          @_janitor.add @_bindTo key, v
+          v = v.value()
+
+        @_component.set key, v
+
+    ###
+    ###
+
+    _bindTo: (key, bindableReference) ->
+      @_component.bind key, (value) ->
+        bindableReference.value value
 
     ###
     ###
