@@ -1,6 +1,6 @@
 {
   "name": "paperclip-component",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "paperclip-view ==============",
   "main": "./lib/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "type-component": "0.0.1",
     "bindable": "0.5.x",
     "paperclip": "0.3.x",
-    "traverse": "^0.6.6",
+    "traverse": "0.6.6",
     "janitorjs": "0.0.4"
   },
   "devDependencies": {
