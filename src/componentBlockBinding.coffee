@@ -37,6 +37,7 @@ module.exports = (Component) ->
       @_janitor.dispose()
       @child?.unbind()
       @_component?.dispose()
+      @_component = undefined
 
     ###
     ###
